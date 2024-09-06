@@ -1531,6 +1531,38 @@ pre code {
   }
 }
 
+
+
+/* Logo section start */
+
+
+/* .logo-sec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  background-size: contain;
+  width: 100%;
+  aspect-ratio: 665 / 375;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-sec h1{
+  font-size: 2rem;
+} */
+
+
+
+
+
+
+
+
+/* Table start */
+
 .table {
   width: 100%;
   margin-bottom: 1rem;
