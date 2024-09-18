@@ -28,6 +28,14 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .nav-desk {
+        position: sticky;
+        top: 0;
+        z-index: 900;
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -77,7 +85,7 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid">
+    <div class="container-fluid nav-desk">
       <div class="row border-top px-xl-5">
         <div class="col-lg-3 d-none d-lg-block">
           <a
@@ -177,7 +185,7 @@
           <div class="col-lg-5">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="img/about.jpg"
+              src="img/about2.png"
               alt=""
             />
           </div>
@@ -255,7 +263,10 @@
               <div class="card-header bg-light text-center p-4">
                 <h1 class="m-0">Sign Up Now</h1>
               </div>
-              <div class="card-body rounded-bottom bg-primary p-5">
+              <div
+                class="card-body rounded-bottom p-5"
+                style="background-color: #012a87"
+              >
                 <form>
                   <div class="form-group">
                     <input
@@ -288,6 +299,7 @@
                     <button
                       class="btn btn-dark btn-block border-0 py-3"
                       type="submit"
+                      style="background-color: #000104; color: #fff"
                     >
                       Sign Up Now
                     </button>
@@ -371,8 +383,8 @@
 
     <!-- Footer Start -->
     <div
-      class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5"
-      style="margin-top: 90px"
+      class="container-fluid text-white py-5 px-sm-3 px-lg-5"
+      style="margin-top: 90px; background-color: #000104"
     >
       <div class="row pt-5">
         <div class="col-lg-7 col-md-12">
@@ -469,14 +481,17 @@
       </div>
     </div>
     <div
-      class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-      style="border-color: rgba(256, 256, 256, 0.1) !important"
+      class="container-fluid text-white border-top py-4 px-sm-3 px-md-5"
+      style="
+        border-color: rgba(256, 256, 256, 0.1) !important;
+        background-color: #012a87;
+      "
     >
       <div class="row">
         <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
           <p class="m-0 text-white">
             &copy; <a href="#">Briteque</a>. All Rights Reserved. Designed by
-            <a href="https://htmlcodex.com">HTML Codex</a>
+            <a href="https://htmlcodex.com">Elizabeth&Ismael</a>
           </p>
         </div>
         <div class="col-lg-6 text-center text-md-right">

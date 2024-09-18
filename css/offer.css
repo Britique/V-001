@@ -12,6 +12,12 @@
     font-size: 1.2rem;
     margin-top: 20px;
 }
+.nav-desk {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    width: 100%;
+  }
 /* Offerings Section Styling */
 .offerings-section {
     padding: 80px 20px;
