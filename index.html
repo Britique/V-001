@@ -104,6 +104,28 @@
           max-height: 60px;
         }
       }
+      .team-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      .team-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+      .team-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+      }
+      .team-bio {
+        font-size: 1rem;
+        color: #555;
+        margin-top: 10px;
+      }
     </style>
   </head>
 
@@ -159,7 +181,12 @@
     <div class="container-fluid nav-desk">
       <div class="row border-top px-xl-5">
         <div class="col-lg-3 d-none d-lg-block">
-          <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none" data-toggle="collapse"  href="#navbar-vertical" style="height: 67px; padding: 0 30px">
+          <a
+            class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none"
+            data-toggle="collapse"
+            href="#navbar-vertical"
+            style="height: 67px; padding: 0 30px"
+          >
             <h5 class="text-primary m-0">
               Subjects
               <i class="fas fa-book-open text-primary mr-2"></i>
@@ -764,109 +791,39 @@
     <!-- Registration End -->
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
-      <div class="container pt-5 pb-3">
-        <div class="text-center mb-5">
-          <h5
-            class="text-primary text-uppercase mb-3"
-            style="letter-spacing: 5px"
-          >
-            Team
-          </h5>
-          <h1>Meet Our Team</h1>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Meet Our Team</h2>
+      <div class="row">
+        <!-- Team Member 1: Linda Kamara -->
+        <div class="col-md-6">
+          <div class="team-card">
+            <div class="team-name">Linda Kamara</div>
+            <div class="team-bio">
+              Linda is an expert in Education, Careers, and Employability with
+              10+ years of experience. She has a proven track record of
+              supporting learners in both educational and welfare-to-work
+              settings, especially those with Special Educational Needs and
+              Disabilities (SEND), guiding them toward sustainable employment
+              and further educational opportunities.
+            </div>
+          </div>
         </div>
-        <div class="row d-flex align-items-center justify-content-center">
-          <!-- <div class="col-md-6 col-lg-3 text-center team mb-4">
-            <div class="team-item rounded overflow-hidden mb-2">
-              <div class="team-img position-relative">
-                <img class="img-fluid" src="img/team-1.jpg" alt="" />
-                <div class="team-social">
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-secondary p-4">
-                <h5>Jhon Doe</h5>
-                <p class="m-0">Web Designer</p>
-              </div>
-            </div>
-          </div> -->
-          <div class="col-md-6 col-lg-3 text-center team mb-4">
-            <div class="team-item rounded overflow-hidden mb-2">
-              <div class="team-img position-relative">
-                <img class="img-fluid" src="img/user.png" alt="" />
-                <div class="team-social">
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-secondary p-4">
-                <h5>ULRIC QUEE</h5>
-                <p class="m-0">Founder</p>
-              </div>
+        <!-- Team Member 2: Ulric Quee -->
+        <div class="col-md-6">
+          <div class="team-card">
+            <div class="team-name">Ulric Quee</div>
+            <div class="team-bio">
+              Ulric is a technology and legal professional with 15+ years of
+              experience in cybersecurity and data privacy law. With a
+              background in Computer Science and Law, he helps clients navigate
+              compliance, mitigate risks, and respond to data breaches
+              efficiently.
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 text-center team mb-4">
-            <div class="team-item rounded overflow-hidden mb-2">
-              <div class="team-img position-relative">
-                <img class="img-fluid" src="img/user.png" alt="" />
-                <div class="team-social">
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-secondary p-4">
-                <h5>LINDA KAMARA</h5>
-                <p class="m-0">Founder</p>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-6 col-lg-3 text-center team mb-4">
-            <div class="team-item rounded overflow-hidden mb-2">
-              <div class="team-img position-relative">
-                <img class="img-fluid" src="img/team-4.jpg" alt="" />
-                <div class="team-social">
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-outline-light btn-square mx-1" href="#"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-secondary p-4">
-                <h5>Jhon Doe</h5>
-                <p class="m-0">Web Designer</p>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
+
     <!-- Team End -->
 
     <!--client start-->
@@ -910,7 +867,7 @@
                   department certainly benefited from it. The student’s feedback
                   responses speak for themselves
                 </h4>
-                <img class="img-fluid mx-auto mb-3" src="img/user.png" alt="" />
+
                 `
                 <h5 class="m-0">Engineer Dr. Samba</h5>
                 <span
@@ -923,7 +880,7 @@
                 <h4 class="font-weight-normal mb-4">
                   This was an excellent prepared training
                 </h4>
-                <img class="img-fluid mx-auto mb-3" src="img/user.png" alt="" />
+
                 <h5 class="m-0">Sorie</h5>
                 <span
                   >Engineering student at FBC University of Sierra Leone
@@ -935,7 +892,7 @@
                   We need more guidance from top professionals like this team
                   when it comes to career path and seeking jobs
                 </h4>
-                <img class="img-fluid mx-auto mb-3" src="img/user.png" alt="" />
+
                 <h5 class="m-0">Abdul Koroma</h5>
                 <span>3rd Year student at FBC University of Sierra Leone</span>
               </div>
